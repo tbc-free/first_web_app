@@ -34,4 +34,4 @@ def delete_note(id):
 if __name__ == "__main__":
     with app.app_context():  # ← 追加
         db.create_all()  # 初回のみデータベースを作成
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
